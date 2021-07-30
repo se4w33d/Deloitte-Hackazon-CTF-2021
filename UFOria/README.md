@@ -1,4 +1,4 @@
-UFOria
+# UFOria
 
 Category: Web, OSINT  
 Level: Beginner  
@@ -51,15 +51,14 @@ Basically, what the code does is that it is validating the invite code entered b
 
 
 
-*First part:*
+***First part:***
 
 ```javascript
 if (parts[0] != "UFO") { return false; }
 ```
 The first part is the easiest since it is straightforward without any encoding to the strings. The invite code is plain "UFO".  
 
-
-*Second part & third part:*
+***Second part & third part:***
 
 ```javascript
 if (parts[1] != btoa("UFO")) { return false; }
@@ -73,7 +72,9 @@ For the 3rd part, it uses the method `charCodeAt()` to convert the string "UFO" 
 
 We can solved the above for part two and three using the **Console** under the **Developer tools** like below:
 
-![](./img/1_invite_only/1_4_javascript.png)
+<p align="center">
+  <img  src="./img/1_invite_only/1_4_javascript.png">
+</p>
 
 And there we have our second and third part of the invite code as "VUZP" and "234" respectively.  
 
@@ -81,7 +82,9 @@ And there we have our second and third part of the invite code as "VUZP" and "23
 
 Head on to the webpage and click on ''**Contact us**''  below:  
 
-![](./img/1_invite_only/1_5_clickhere.png)
+<p align="center">
+  <img  src="./img/1_invite_only/1_5_clickhere.png">
+</p>
 
 There will be a pop-up prompting for the invite code. Enter the invite code `UFO-VUZP-234`:    
 
@@ -139,10 +142,18 @@ Trying to do some OSINT search on "Ben Organa", "UFOria", and the handle "borgan
 
 
 This time round I noticed another person was mentioned in the above quote, Elliot Talton, who is a close friend of the CEO and also the co-founder of UFOria. A quick google search returns the list below where the third result seems like a huge lead.
-![](./img/2_members_only/4_elliot.png)
+
+<p align="center">
+  <img  src="./img/2_members_only/4_elliot.png">
+</p>
 
 Clicking into the Linkedin post and here we got ourselves another clue to the location where on the first post, Elliot mentioned about visiting a cafe, Lands Huys Cafe, which reminds him of his childhood memories:
-![](./img/2_members_only/5_post.png)
+
+<p align="center">
+  <img  src="./img/2_members_only/5_post.png">
+</p>
+
+
 
 Entering that cafe name to the Google search and here we might have found the place, "Bourtange, Netherlands" :
 ![](./img/2_members_only/6_placefound.png)
